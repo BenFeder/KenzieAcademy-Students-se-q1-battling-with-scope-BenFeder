@@ -6,6 +6,40 @@ function Knight() {
     alert(`You Healed!  Your health is now ${knight.health}`);
   };
 
+  /*
+  this.heal = function () {
+    if (monster.name == "Gargoyle" || monster.name == "Second Gargoyle") {
+      knight.health += 2;
+      alert(`You Healed!  Your health is now ${knight.health}`);
+    } else if (monster.name == Wizard) {
+      knight.health += 3;
+      alert(`You Healed!  Your health is now ${knight.health}`);
+    }
+    else if (monster.name == Pirate) {
+      knight.health += 11;
+      alert(`You Healed!  Your health is now ${knight.health}`);
+  };
+  */
+
+  this.attack = function () {
+    console.log(monster);
+    if (monster.name == "Gargoyle" || monster.name == "Second Gargoyle") {
+      monster.slash();
+    } else if (monster.name == "Wizard") {
+      function bomb() {
+        return 5;
+      }
+      monster.giveBomb(bomb);
+    } else if (monster.name == "Pirate") {
+      let song = `Yo ho, yo ho, a pirate's life for me
+      We pillage, we plunder, we rifle, and loot
+      Drink up, me 'earties, yo ho
+      We kidnap and ravage and don't give a hoot
+      Drink up me hearties, yo ho`;
+      monster.serenade(song);
+    }
+  };
+
   // You must keep this function working.
   this.getHealth = () => {
     return this.health;
