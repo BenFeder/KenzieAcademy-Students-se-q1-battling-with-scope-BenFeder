@@ -1,13 +1,46 @@
 function Knight() {
   this.health = 4; // DO NOT MANUALLY CHANGE THIS FROM 4
 
-  this.heal = function () {
+  this.Heal = function () {
     knight.health += 2;
     alert(`You Healed!  Your health is now ${knight.health}`);
   };
 
+  this.Slash = function () {
+    monster.slash();
+  };
+
+  this.ThrowBomb = function () {
+    if (monster.name == "Wizard" || monster.name == "Pirate") {
+      function bomb() {
+        return 5; // create damage to attack Wizard
+      }
+      monster.giveBomb(bomb);
+    } else {
+      window.alert("Cannot throw bombs at a Gargoyle!");
+    }
+  };
+
+  this.Serenade = function () {
+    if (monster.name == "Pirate") {
+      let song = `Yo ho, yo ho, a pirate's life for me 
+      We pillage, we plunder, we rifle, and loot
+      Drink up, me 'earties, yo ho
+      We kidnap and ravage and don't give a hoot
+      Drink up me hearties, yo ho`; // set song to "Pirate's Life stanza"
+      monster.serenade(song);
+    } else if (
+      monster.name == "Gargoyle" ||
+      monster.name == "Second Gargoyle"
+    ) {
+      window.alert("Cannot serenade a Gargoyle.");
+    } else if (monster.name == "Wizard") {
+      window.alert("Cannot serenade a Wizard.");
+    }
+  };
+
+  /*
   this.attack = function () {
-    console.log(monster);
     if (monster.name == "Gargoyle" || monster.name == "Second Gargoyle") {
       monster.slash();
     } else if (monster.name == "Wizard") {
@@ -24,6 +57,7 @@ function Knight() {
       monster.serenade(song);
     }
   };
+  */
 
   // You must keep this function working.
   this.getHealth = () => {
