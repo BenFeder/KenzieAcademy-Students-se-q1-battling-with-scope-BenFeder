@@ -1,5 +1,6 @@
 .gameContainer {
   display: flex;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5cebe1edef715f0001010eb0/1579607415233-1MPWWTUGYO7G5DBBQ9M8/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Dover+castle+front+view+2.jpg);
 }
 
 #knight,
