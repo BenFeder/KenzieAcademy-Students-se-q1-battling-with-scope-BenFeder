@@ -2,8 +2,8 @@ function Knight() {
   this.health = 4; // DO NOT MANUALLY CHANGE THIS FROM 4
 
   this.heal = function () {
-    this.health += 2;
-    alert(`You Healed!  Your health is now ${this.health}`);
+    knight.health += 2;
+    alert(`You Healed!  Your health is now ${knight.health}`);
   };
 
   // You must keep this function working.
