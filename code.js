@@ -10,7 +10,7 @@ function Knight() {
     monster.slash();
   };
 
-  this.ThrowBomb = function () {
+  this.Throw_Bomb = function () {
     if (monster.name == "Wizard" || monster.name == "Pirate") {
       function bomb() {
         return 5; // create damage to attack Wizard
