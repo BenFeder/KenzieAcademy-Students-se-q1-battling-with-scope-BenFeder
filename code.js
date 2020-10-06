@@ -2,8 +2,16 @@ function Knight() {
   this.health = 4; // DO NOT MANUALLY CHANGE THIS FROM 4
 
   this.Heal = function () {
-    knight.health += 2;
-    alert(`You Healed!  Your health is now ${knight.health}`);
+    if (monster.name == "Gargoyle" || monster.name == "Second Gargoyle") {
+      knight.health += 2;
+      alert(`You Healed!  Your health is now ${knight.health}`);
+    } else if (monster.name == "Wizard") {
+      knight.health += 3;
+      alert(`You Healed!  Your health is now ${knight.health}`);
+    } else if (monster.name == "Pirate") {
+      knight.health += 5;
+      alert(`You Healed!  Your health is now ${knight.health}`);
+    }
   };
 
   this.Slash = function () {
