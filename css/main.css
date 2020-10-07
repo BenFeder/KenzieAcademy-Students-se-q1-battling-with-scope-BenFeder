@@ -11,3 +11,11 @@ body {
 #monster {
   margin: 75px;
 }
+
+h3 {
+  background-color: red;
+  width: 85px;
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+}
