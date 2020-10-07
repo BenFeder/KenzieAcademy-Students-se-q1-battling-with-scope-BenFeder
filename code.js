@@ -47,26 +47,6 @@ function Knight() {
     }
   };
 
-  /*
-  this.attack = function () {
-    if (monster.name == "Gargoyle" || monster.name == "Second Gargoyle") {
-      monster.slash();
-    } else if (monster.name == "Wizard") {
-      function bomb() {
-        return 5; // create damage to attack Wizard
-      }
-      monster.giveBomb(bomb);
-    } else if (monster.name == "Pirate") {
-      let song = `Yo ho, yo ho, a pirate's life for me 
-      We pillage, we plunder, we rifle, and loot
-      Drink up, me 'earties, yo ho
-      We kidnap and ravage and don't give a hoot
-      Drink up me hearties, yo ho`; // set song to "Pirate's Life stanza"
-      monster.serenade(song);
-    }
-  };
-  */
-
   // You must keep this function working.
   this.getHealth = () => {
     return this.health;
